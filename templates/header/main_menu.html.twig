@@ -1,0 +1,36 @@
+{# templates/header/main_menu.html.twig #}
+<!-- Menu główne -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{{ path('homepage') }}">Twoja Strona</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="{{ path('homepage') }}">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="{{ path('homepage') }}">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="{{ path('homepage') }}">Menu 3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Dodaj CSS do podświetlania na najechanie kursorem -->
+<style>
+    .navbar-nav .nav-link:hover {
+        background-color: #007bff; /* Kolor podświetlenia - niebieski */
+        color: white !important; /* Kolor tekstu - biały */
+    }
+    .navbar-nav .nav-item a:hover {
+        background-color: #007bff; /* Kolor podświetlenia - niebieski */
+        color: white !important; /* Kolor tekstu - biały */
+    }
+</style>
+
